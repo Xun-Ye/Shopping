@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shopping.dao.ShopMapper" >
+  <resultMap id="BaseResultMap" type="com.shopping.eneity.Shop" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="shopName" property="shopname" jdbcType="VARCHAR" />
+    <result column="shopkeeperId" property="shopkeeperid" jdbcType="INTEGER" />
+    <result column="telephone" property="telephone" jdbcType="VARCHAR" />
+    <result column="shopTel" property="shoptel" jdbcType="VARCHAR" />
+    <result column="createTime" property="createtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, shopName, shopkeeperId, telephone, shopTel, createTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from shop
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from shop
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.shopping.eneity.Shop" >
+    insert into shop (id, shopName, shopkeeperId, 
+      telephone, shopTel, createTime
+      )
+    values (#{id,jdbcType=INTEGER}, #{shopname,jdbcType=VARCHAR}, #{shopkeeperid,jdbcType=INTEGER}, 
+      #{telephone,jdbcType=VARCHAR}, #{shoptel,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.shopping.eneity.Shop" >
+    insert into shop
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="shopname != null" >
+        shopName,
+      </if>
+      <if test="shopkeeperid != null" >
+        shopkeeperId,
+      </if>
+      <if test="telephone != null" >
+        telephone,
+      </if>
+      <if test="shoptel != null" >
+        shopTel,
+      </if>
+      <if test="createtime != null" >
+        createTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="shopname != null" >
+        #{shopname,jdbcType=VARCHAR},
+      </if>
+      <if test="shopkeeperid != null" >
+        #{shopkeeperid,jdbcType=INTEGER},
+      </if>
+      <if test="telephone != null" >
+        #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="shoptel != null" >
+        #{shoptel,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.shopping.eneity.Shop" >
+    update shop
+    <set >
+      <if test="shopname != null" >
+        shopName = #{shopname,jdbcType=VARCHAR},
+      </if>
+      <if test="shopkeeperid != null" >
+        shopkeeperId = #{shopkeeperid,jdbcType=INTEGER},
+      </if>
+      <if test="telephone != null" >
+        telephone = #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="shoptel != null" >
+        shopTel = #{shoptel,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.shopping.eneity.Shop" >
+    update shop
+    set shopName = #{shopname,jdbcType=VARCHAR},
+      shopkeeperId = #{shopkeeperid,jdbcType=INTEGER},
+      telephone = #{telephone,jdbcType=VARCHAR},
+      shopTel = #{shoptel,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

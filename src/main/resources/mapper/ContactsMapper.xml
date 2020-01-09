@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shopping.dao.ContactsMapper" >
+	<select id="queryContacts" parameterType="java.lang.Integer" resultType="com.shopping.eneity.contacts">
+		SELECT NAME,contacts.id,userid,contactsId FROM contacts
+
+		INNER JOIN USER ON user.id = contacts.contactsId
+		<if test="userId != null">
+			 WHERE userid = #{userId,jdbcType=INTEGER}
+		</if>
+		
+	</select>
+</mapper>

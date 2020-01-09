@@ -1,0 +1,12 @@
+package com.shopping.service;
+
+import com.shopping.eneity.User;
+
+public interface UserService {
+	boolean insertUser(User user);
+	
+	boolean UpdateUser(User user);
+	
+	
+	User Login(User user);
+}

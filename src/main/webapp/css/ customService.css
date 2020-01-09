@@ -1,0 +1,459 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	
+	
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+#app{
+	width: 100%;
+	height: 100%;
+	background-color: #5C5C5C;
+	overflow: hidden;
+
+}
+#customService{
+	width: 80%;
+	height: 80%;
+	background-color: white;
+	margin: 5% auto;
+	border-radius: 5px;
+	clear: left;
+}
+
+/*左侧边栏*/
+#a-left{
+	width: 23%;
+	height: 100%;
+	border-right: 1px solid #ECEAEA;
+	float: left;
+}
+
+.a-user{
+	width:80%;
+	margin: 0 auto;
+	height: 10%;
+	background-color: #ADADAD;
+}
+.Search-contacts{
+	width: 100%;
+	height: 5%;
+	background-color: #0194BE;
+	clear: left;
+}
+.Search-contacts input{
+	width: 100%;
+	height: 30px;
+	border: 0;
+	outline: none;
+}
+.contacts{
+	width: 100%;
+	height: 85%;
+	overflow-y: scroll;
+}
+
+.contact{
+	width: 100%;
+	height: 50px;
+	/*background-color: #D8EFFF;*/
+	cursor: pointer;
+	margin: 10px 0;
+	box-shadow: 1px 1px 10px #AFAFAF;
+	/*border-bottom: 1px solid #000000;*/
+}
+
+.c-name{
+	float: left;
+	width: 70%;
+}
+.c-shop{
+	float: right;
+	width:50px;
+	height: 100%;
+	
+}
+
+
+/*聊天界面*/
+
+#a-center{
+	width: 55%;
+	height: 100%;
+	/*background-color: #0AA5E2;*/
+	border-right: 1px solid #ECEAEA;
+	float: left;
+	overflow: hidden;
+}
+
+.shop-name{
+	width: 100%;
+	height: 10%;
+	border-bottom: 1px solid #ECEAEA;
+}
+
+#c-info{
+	width: 100%;
+	overflow-y: auto;
+	height: 60%;
+	border-bottom:1px solid #ECEAEA ;
+	
+}
+.sender{
+	width: 80%;
+	/*background-color: #E3E3E3;*/
+	margin:10px 0 10px 10px ;
+	clear: right;
+	float: left;
+}
+
+.sender p{
+	float: left;
+}
+
+.information{
+	border-radius: 5px;
+	/*background-color: #CDCDCD;*/
+	/*padding: 10px;*/
+	clear: both;
+
+}
+
+.information p{
+	background-color: #CDCDCD;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+.ChatTime{
+	
+	clear: left;
+	margin: 0 auto;
+}
+
+.recipient{
+	float: right;
+	width: 80%;
+	clear: right;
+	margin:10px 0 10px 10px ;
+}
+.recipient p{
+	float: right;
+}
+
+.info-img{
+	width: 250px;
+	height: 250px;
+	background-color:#E4E9EA;
+	padding: 10px;
+}
+.info-img-r{
+	clear: right;
+	float: right;
+	
+	margin-right: 5px;
+}
+.info-img-f{
+	clear: left;
+	float: left;
+	
+	margin-left: 5px;
+}
+
+.info-img-f div{
+	width: 250px;
+	height: 250px;
+	background-image: url(../images/abt-1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.info-img-r div{
+	width: 250px;
+	height: 250px;
+	background-image: url(../images/abt-1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*发送信息*/
+
+#submint-info{
+	width: 100%;
+	height: 30%;
+	padding: 10px;
+	
+}
+
+#tool{
+	width: 100%;
+	height: 20%;
+}
+
+
+#text{
+	width: 95%;
+	height: 80px;
+	resize:none;
+	outline: none;
+	border: 0;
+}
+
+
+
+/*
+ 商品链接
+ * */
+
+.Commodity-link{
+	width:90%;
+	height: 150px;
+	border: 1px solid #E4E9EA;
+	clear: right;
+	float: right;
+	padding: 10px;
+	cursor: pointer;
+}
+.commodity{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #E4E9EA;
+	clear: right;
+	
+}
+.Commodity .img{
+	width: 100px;
+	height: 100px;
+	background-image: url(../images/abt-1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.font{
+	font-size:13px; color: #CCCCCC;margin-top: 50px;
+}
+
+
+.link{
+	clear: both;
+}
+
+
+/*
+ 店铺商品相关信息
+ * */
+
+
+#a-right{
+	width: 21.81%;
+	height: 100%;
+	float: left;
+}
+
+#title{
+	width: 100%;
+	height: 10%;
+}
+
+#title div{
+	font-size: 13px;
+	float: left;
+	width: 33.3%;
+	cursor: pointer;
+}
+
+#title div p{
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+}
+
+
+/*内容*/
+#content{
+	width: 100%;
+	height: 90%;
+	
+}
+/*
+ 正在咨询
+ * */
+
+#InConsultation{
+	width: 93%;
+	height: 96.5%;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.store{
+	width: 100%;
+	height: 100px;
+	clear: both;
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	box-shadow: 1px 1px 10px #C9C9C9;
+}
+
+.s-img{
+	width: 100px;
+	height: 100px;
+	background-image: url('../images/abt-1.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.s-title{
+	float: right;
+	width: 140px;
+	height: 100%;
+	
+}
+
+.s-title p{
+	margin-top: 25px;
+	margin-left: 5px;
+	height: 100px;
+	/*line-height: 100px;*/
+	font-size: 13px;
+}
+
+.s-info{
+	background-color: #FFFFFF;
+	margin-top: 15px;
+	padding: 5px;
+	box-shadow: 1px 1px 10px #C9C9C9;
+}
+.s-info p{
+	color: #AEAEAE;
+	font-size: 13px;
+	height: 20px;
+	line-height: 20px;
+	
+}
+
+/**
+ * 相关商品
+ */
+
+.s-commodity{
+	box-shadow: 1px 1px 5px #E3E3E3;
+	clear: left;
+	height: 70px;
+}
+
+.c-img{
+	width: 80px;
+	height: 70px;
+	background-image: url(../images/abt-1.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.c-info{
+	font-size: 13px;
+	width: 159px;
+	margin-left: 5px;
+	float: left;
+}
+
+.c-info p{
+	word-wrap: break-word;word-break: break-all;overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; /* 显示三行，后面省略 */
+	overflow: hidden;
+
+}
+
+.c-info input{
+	width: 50px;border: 0; background-color: #0AA5E2;cursor: pointer;
+	margin-left:50px ;
+}
+
+/*
+ * 相关订单样式
+ * 
+ */
+
+.orderForm{
+	margin-bottom: 10px;
+	width: 100%;
+	box-shadow: 1px 1px 5px #E4E9EA;
+	clear: left;
+	height: 100px;
+}
+.orderNum p{
+	color: #AEAEAE;
+	font-size: 13px;
+}
+
+.of-info{
+	margin-top: 10px;
+	clear: left;
+}
+.of-img{
+	width: 80px;
+	height: 70px;
+	background-image: url(../images/abt-2.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+.of-content{
+	float: left;
+}
+.of-content p{
+	word-wrap: break-word;word-break: break-all;overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; /* 显示三行，后面省略 */
+	overflow: hidden;
+	margin-left: 5px;
+}
+
+.of-sub{
+	float: right;
+	margin-top: 10px;
+}
+
+
+/**
+ * 店铺信息
+ * 
+ */
+.shop-info-title{
+	width: 86%;
+	height: 100%;
+	/*background-color:#666666;*/
+	box-shadow: 1px 1px 5px #262626;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	
+}
+
+.shop-info-title p{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	color: #B0B0B0;
+	line-height: 30px;
+}

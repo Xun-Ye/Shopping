@@ -1,0 +1,103 @@
+package com.shopping.eneity;
+
+public class Commodity {
+    private Integer id;
+
+    private Integer shopid;
+
+    private String tradename;
+
+    private Double commodityprice;
+
+    private Integer classificationid;
+
+    private String productbrief;
+
+    private Integer gender;
+
+    private Float discount;
+
+    private Integer freeshipping;
+
+    private Integer postage;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getShopid() {
+        return shopid;
+    }
+
+    public void setShopid(Integer shopid) {
+        this.shopid = shopid;
+    }
+
+    public String getTradename() {
+        return tradename;
+    }
+
+    public void setTradename(String tradename) {
+        this.tradename = tradename == null ? null : tradename.trim();
+    }
+
+    public Double getCommodityprice() {
+        return commodityprice;
+    }
+
+    public void setCommodityprice(Double commodityprice) {
+        this.commodityprice = commodityprice;
+    }
+
+    public Integer getClassificationid() {
+        return classificationid;
+    }
+
+    public void setClassificationid(Integer classificationid) {
+        this.classificationid = classificationid;
+    }
+
+    public String getProductbrief() {
+        return productbrief;
+    }
+
+    public void setProductbrief(String productbrief) {
+        this.productbrief = productbrief == null ? null : productbrief.trim();
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
+
+    public Float getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(Float discount) {
+        this.discount = discount;
+    }
+
+    public Integer getFreeshipping() {
+        return freeshipping;
+    }
+
+    public void setFreeshipping(Integer freeshipping) {
+        this.freeshipping = freeshipping;
+    }
+
+    public Integer getPostage() {
+        return postage;
+    }
+
+    public void setPostage(Integer postage) {
+        this.postage = postage;
+    }
+}

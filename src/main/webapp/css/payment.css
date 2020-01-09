@@ -1,0 +1,178 @@
+ *{margin:0;padding:0;}
+	
+	.address-list{
+		height:170px;
+	}
+	.addr-item{
+		position:relative;
+		width: 237px;
+		height: 120px;
+		border: 1px solid #ccc;
+	}
+	.b{
+		 font-weight:bold;
+		 font-size: 12px;
+	}
+	.inner-infos{
+		/*position:absolute;*/
+		width: 207px;
+		top: 200px;
+		margin:0 auto;
+		margin-top:5%;
+	}
+	.data-halo-id{
+		margin:3px auto 3px auto;
+		height: 94px;
+	}
+	.data-halo-type{
+		float: left;
+		width:45%;
+		padding-top: 10px;
+		margin-right:3px
+	}
+	.default-tip{
+		position:absolute;
+		width:50px;
+		height:20px;
+		/*border:1px solid red;*/
+		right:0px;
+		top:0px;
+		z-index:100;
+		background-color: #CCC;
+		text-align:center;
+		font-size:12px;
+		color: #fff;
+		border-top:1px solid  rgba(211,211,211,0.75); 
+		border-right:1px solid  rgba(211,211,211,0.75);
+		border-left:1px solid  rgba(211,211,211,1);  
+	}
+	.tab{
+		background-color: #003377;
+		color: #fff;
+		text-align:center;
+	}
+	a:link {color: #77DDFF}
+	#post{
+		height:90px;
+	}
+	.post-information-tit{
+		border-bottom:1px solid #ccc;
+	}
+	.post-information{
+		height: 70px;
+		border:1px solid #ccc;
+	}
+	.post-biao{
+		width: 170px;
+		text-align:center;
+		border-top:2px solid #003377;
+	}
+	.biaoti{
+		
+		border-bottom: 2px solid  rgba(211,211,211,0.75);  
+		border-right:2px solid  rgba(211,211,211,0.5);  
+	}
+	.means-wai{
+		display: flex; 
+		flex-direction: column;
+		height: 30px;
+	}
+	.means-ad{
+		padding: 5px;
+		margin-bottom:3px;
+		line-height:30px;
+	}
+	.means-price{
+		color: rgb(255, 0, 54);
+	}
+	.miaosu{
+		height: 30px;
+	}
+	.miaosu-t{
+		line-height: 50px;
+		display:block;
+		padding-left:20px;
+	}
+	.item-headers-wrap{
+		height: 50px;
+	}
+	.shop-commodity,.shop-attribute,.shop-price,.shop-amount,.shop-discounts-means,.shop-subtotal{
+		text-align:center;
+		border-bottom:2px solid #000;
+		margin-right: 2px;
+	}
+	.biaoti-title{
+		height: 20px;
+	}
+	.list-itemInfo{
+		float:left;width:54.5%;
+	}
+	.list-info-detail{
+		float:left;width:42.3%;
+	}
+	.list-info-tu{
+		float:left;
+		margin-right:10px;
+	}
+	.list-info-cell{
+		float:left;
+		width: 150px;
+	    height: 60px;
+  	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.list-info-sku{
+		float:left;
+		width:30%;
+	}
+	.list-info-price{
+		float:left;
+		width:27.5%;
+	}
+	.list-info-quantity{
+		float:left;
+		width:13%;
+	}
+	.list-info-row_select{
+		float:left;width:17%;
+	}
+	.list-info-row_price{
+		float:left;
+		width:15%;
+		text-align:right;
+	}
+	.list-info-jia{
+		font-weight: bold;
+		font-style: normal;
+		text-decoration: none; 
+		color: rgb(255, 0, 54); 
+		font-size: 14px; 
+		min-width: 100px;
+	}
+	.list-info-price,.list-info-quantity,.list-info-row_select{
+		text-align:center;
+	    
+	}
+	.list{
+		border-bottom:1px dashed #D3D3D3;
+	}
+	.list-tit-particulars{
+		height:65px;
+		/*background-color: #ccc;*/
+		border-top:1px dashed #D3D3D3;
+		border-bottom:1px dashed #D3D3D3;
+	}
+	.data-halo-type,.list-tit-particulars,.means-ad,.order-tit,.order-zong{
+		background-color: #F5F5F5;
+	}
+	.order-zong{
+		height: 45px;
+		margin-top:3px;
+		text-align:right;
+	}
+	.order-xiaoji{
+		font-weight: bold;
+		color: rgb(255, 0, 54);
+		font-size: 16px;
+	}
